@@ -36,6 +36,8 @@
 [alias]
 	st = status -s
 	co = checkout
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   up = !git pull --rebase --prune $@ && git submodule update --init --recursive
 	cob = checkout -b
 	cm = commit
