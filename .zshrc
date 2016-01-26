@@ -49,7 +49,7 @@ ZSH_THEME="bureau"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sublime brew autojump atom docker docker-compose git-hubflow)
+plugins=(git sublime brew autojump atom docker docker-compose git-hubflow nvm)
 
 # User configuration
 
