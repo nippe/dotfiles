@@ -1,18 +1,22 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/nippe/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-#ZSH_THEME="Powerline"
-#ZSH_THEME="bira"
-#ZSH_THEME="theunraveler"
-ZSH_THEME="bureau"
-#ZSH_THEME="norm"
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+#ZSH_THEME="robbyrussell"
+#ZSH_THEME="honukai"
+ZSH_THEME="spaceship"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -27,7 +31,7 @@ ZSH_THEME="bureau"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -49,14 +53,13 @@ ZSH_THEME="bureau"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sublime brew autojump atom docker docker-compose git-hubflow nvm)
+plugins=(git npm nvm atom docker docker-machine docker-compose autojump aws httpie fasd)
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
-
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -72,28 +75,35 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export GIT_PAGER="less -F -X"
+# nvm config according to brew install nvm
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 
-alias lsl="ls -la"
-alias adev="cd ~/dev/acast/"
+#brew search config
+HOMEBREW_GITHUB_API_TOKEN="636320e6b770d8521a5e81ad652ef3c4e1dcc307"
+
+# To get powerline working?
+export LC_ALL=en_US.UTF-8
+
+
+
+source $ZSH/oh-my-zsh.sh
+
+for file in ~/.{aliases}; do
+  [ -r "$file"  ] && [ -f "$file"  ] && source "$file";
+
+
+# alias j="d"
 alias gti="git"
 alias cls="clear"
-alias grep="ggrep"
-alias at="atom"
-alias att="at ."
+# alias grep="ggrep"
 alias piong="ping"
 alias poing="ping"
+alias Dexit="exit"
+alias cim="vim"
 
 makedirAndCdIntoIt() {
 	mkdir $1
@@ -127,21 +137,25 @@ timedCurl() {
 }
 alias tcurl=timedCurl
 
-alias dval="eval \"$(docker-machine env default)\""
+#alias dval="eval \"$(docker-machine env default)\""
 
 alias o="open"
 
-# Martins azure cli atuocomplete
-autoload -U compinit
-compinit
-zstyle ':completion:*' menu select=2
+alias t1="tree -L 1 -I node_modules"
+alias t2="tree -L 2 -I node_modules"
+alias t3="tree -L 3 -I node_modules"
+alias t4="tree -L 4 -I node_modules"
 
-fpath=(~/.zsh/azurecompletion $fpath)
+alias later=saveItToReadLater
 
-# /Martins azure cli atuocomplete
+saveItToReadLater() {
+  echo $1 >> ~/Desktop/to_checkout.txt
+}
 
-# Start up nvm
-. ~/.nvm/nvm.sh
+# nvm config according to brew install nvm
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+#brew search config
+HOMEBREW_GITHUB_API_TOKEN="636320e6b770d8521a5e81ad652ef3c4e1dcc307"
+

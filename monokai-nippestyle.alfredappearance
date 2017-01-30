@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 4,
+      "subtext" : {
+        "size" : 11,
+        "colorSelected" : "#A0D87182",
+        "font" : "Fira Mono",
+        "color" : "#4A4A4AFF"
+      },
+      "shortcut" : {
+        "size" : 20,
+        "colorSelected" : "#9CD462FF",
+        "font" : "Fira Mono",
+        "color" : "#BC3562FF"
+      },
+      "backgroundSelected" : "#253510FF",
+      "text" : {
+        "size" : 24,
+        "colorSelected" : "#8EC25FFF",
+        "font" : "Arimo for Powerline",
+        "color" : "#62B6D2FF"
+      },
+      "iconPaddingHorizontal" : 5,
+      "paddingVertical" : 4,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 2,
+      "background" : "#46444800",
+      "spacing" : 10,
+      "text" : {
+        "size" : 36,
+        "colorSelected" : "#F92672FF",
+        "font" : "Fira Mono",
+        "color" : "#FEFFFFFF"
+      },
+      "backgroundSelected" : "#383830FF"
+    },
+    "window" : {
+      "color" : "#1D1D1DFC",
+      "paddingHorizontal" : 10,
+      "width" : 680,
+      "borderPadding" : 10,
+      "borderColor" : "#00000000",
+      "blur" : 0,
+      "roundness" : 0,
+      "paddingVertical" : 10
+    },
+    "credit" : "Ben White",
+    "separator" : {
+      "color" : "#3F3E3EFF",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#3D484AFF",
+      "thickness" : 2
+    },
+    "name" : "Nippe Monokai (v2)"
+  }
+}
