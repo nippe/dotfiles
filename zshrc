@@ -156,6 +156,4 @@ saveItToReadLater() {
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
-#brew search config
-HOMEBREW_GITHUB_API_TOKEN="636320e6b770d8521a5e81ad652ef3c4e1dcc307"
 
