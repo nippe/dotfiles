@@ -85,72 +85,11 @@ export NVM_DIR="$HOME/.nvm"
 #brew search config
 HOMEBREW_GITHUB_API_TOKEN="636320e6b770d8521a5e81ad652ef3c4e1dcc307"
 
-# To get powerline working?
-export LC_ALL=en_US.UTF-8
-
-
 
 source $ZSH/oh-my-zsh.sh
 
-for file in ~/.{aliases}; do
-  [ -r "$file"  ] && [ -f "$file"  ] && source "$file";
-
-
-# alias j="d"
-alias gti="git"
-alias cls="clear"
-# alias grep="ggrep"
-alias piong="ping"
-alias poing="ping"
-alias Dexit="exit"
-alias cim="vim"
-
-makedirAndCdIntoIt() {
-	mkdir $1
-	cd $1
-}
-alias mcd=makedirAndCdIntoIt
-
-cleanAndReinstallNpmPackages(){
-	echo "Removing node_modules..."
-	rm -rf node_modules
-	echo "Cleaning npm cache..."
-	npm cache clean
-	echo "Reinstalling node_modules..."
-	npm install
-}
-alias npmcr=cleanAndReinstallNpmPackages
-
-
-cleanAndReinstallNpmPackagesDevDep(){
-	echo "Removing node_modules..."
-	rm -rf node_modules
-	echo "Cleaning npm cache..."
-	npm cache clean
-	echo "Reinstalling node_modules..."
-	npm install
-}
-alias npmcrd=cleanAndReinstallNpmPackagesDevDep
-
-timedCurl() {
-	curl -o /dev/null -s -w %{time_total}\\n $1
-}
-alias tcurl=timedCurl
-
-#alias dval="eval \"$(docker-machine env default)\""
-
-alias o="open"
-
-alias t1="tree -L 1 -I node_modules"
-alias t2="tree -L 2 -I node_modules"
-alias t3="tree -L 3 -I node_modules"
-alias t4="tree -L 4 -I node_modules"
-
-alias later=saveItToReadLater
-
-saveItToReadLater() {
-  echo $1 >> ~/Desktop/to_checkout.txt
-}
+#for file in ~/.{aliases}; do
+#  [ -r "$file"  ] && [ -f "$file"  ] && source "$file";
 
 # nvm config according to brew install nvm
 export NVM_DIR="$HOME/.nvm"

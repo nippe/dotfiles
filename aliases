@@ -7,6 +7,7 @@ alias piong="ping"
 alias poing="ping"
 alias Dexit="exit"
 alias cim="vim"
+alias brews="brew list"
 
 makedirAndCdIntoIt() {
 	mkdir $1

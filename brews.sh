@@ -36,7 +36,6 @@ casks=(
 	hazel
   dropbox
   slack
-  google-chorme
   firefox
   vlc
   flux

@@ -8,6 +8,8 @@ cp zshrc ~/.zshrc
 echo "aliases"
 cp aliases ~/.aliases
 
-
 echo "gitconfig"
 cp gitconfig ~/.gitconfig
+
+echo "sourceing zshrc"
+# source ~/.zshrc
