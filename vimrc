@@ -17,6 +17,7 @@ Bundle 'scrooloose/nerdtree.git'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'git://github.com/jiangmiao/auto-pairs.git'
+Plugin 'terryma/vim-multiple-cursors'
 
 " Vim Airline
 Plugin 'vim-airline/vim-airline'

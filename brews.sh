@@ -4,7 +4,6 @@ if test ! $(which brew); then
 fi
 
 brews=(
-	autojump
 	git
 	jq
 	httpie
@@ -43,6 +42,7 @@ casks=(
   flux
   caffeine
   evernote
+  kaleidoscope
 )
 
 echo "installing brews..."
