@@ -86,6 +86,7 @@ export NVM_DIR="$HOME/.nvm"
 HOMEBREW_GITHUB_API_TOKEN="636320e6b770d8521a5e81ad652ef3c4e1dcc307"
 
 
+source ~/.aliases
 source $ZSH/oh-my-zsh.sh
 
 #for file in ~/.{aliases}; do

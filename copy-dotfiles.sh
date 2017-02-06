@@ -12,4 +12,4 @@ echo "gitconfig"
 cp gitconfig ~/.gitconfig
 
 echo "sourceing zshrc"
-# source ~/.zshrc
+source ~/.zshrc

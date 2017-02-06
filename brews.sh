@@ -20,6 +20,7 @@ brews=(
   yarn
   fasd
   icdiff
+  nmap
 )
 
 casks=(
@@ -42,6 +43,7 @@ casks=(
   caffeine
   evernote
   kaleidoscope
+  soulver
 )
 
 echo "installing brews..."
