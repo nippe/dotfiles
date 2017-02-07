@@ -8,3 +8,4 @@ apm install stylus
 apm install language-docker
 apm install git-plus
 apm install terminal-plus
+apm install atom-beautify
