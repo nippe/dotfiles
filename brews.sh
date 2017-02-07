@@ -21,6 +21,7 @@ brews=(
   fasd
   icdiff
   nmap
+  hub
 )
 
 casks=(
@@ -44,6 +45,7 @@ casks=(
   evernote
   kaleidoscope
   soulver
+  sonos
 )
 
 echo "installing brews..."
