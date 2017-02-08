@@ -23,6 +23,8 @@ brews=(
   nmap
   hub
   ag
+  node
+  nvm
 )
 
 casks=(
