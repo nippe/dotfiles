@@ -22,6 +22,7 @@ brews=(
   icdiff
   nmap
   hub
+  ag
 )
 
 casks=(
