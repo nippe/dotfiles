@@ -26,6 +26,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()            " required
 
