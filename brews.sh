@@ -49,6 +49,7 @@ casks=(
   kaleidoscope
   soulver
   sonos
+  #omnifocus
 )
 
 echo "installing brews..."
