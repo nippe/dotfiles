@@ -86,7 +86,7 @@ export NVM_DIR="$HOME/.nvm"
 HOMEBREW_GITHUB_API_TOKEN="636320e6b770d8521a5e81ad652ef3c4e1dcc307"
 
 
-source ~/.aliases
+source ~/.aliases #TODO: Fix this with some sort of loop in a diretory or something
 source $ZSH/oh-my-zsh.sh
 
 #for file in ~/.{aliases}; do
@@ -100,3 +100,23 @@ PATH=$PATH:~/bin
 
 # For direnv
 eval "$(direnv hook zsh)"
+
+# For automatic nvm node version switching when .nvmrc exists in folder
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path"  ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" != "N/A"  ] && [ "$nvmrc_node_version" != "$node_version"  ]; then
+      nvm use 
+    fi
+  elif [ "$node_version" != "$(nvm version default)"  ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
