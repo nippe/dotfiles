@@ -28,6 +28,7 @@ Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()            " required
 
