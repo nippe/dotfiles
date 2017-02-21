@@ -2,7 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/$(whoami)/.oh-my-zsh
+#export ZSH=/Users/$(whoami)/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -53,9 +54,9 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm nvm atom docker docker-machine docker-compose autojump aws httpie fasd)
+plugins=(git nvm fasd)
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -79,11 +80,8 @@ source $ZSH/oh-my-zsh.sh
 
 
 # nvm config according to brew install nvm
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
-#brew search config
-HOMEBREW_GITHUB_API_TOKEN="636320e6b770d8521a5e81ad652ef3c4e1dcc307"
+#export NVM_DIR="$HOME/.nvm"
+#. "/usr/local/opt/nvm/nvm.sh"
 
 
 source ~/.aliases #TODO: Fix this with some sort of loop in a diretory or something
@@ -93,8 +91,8 @@ source $ZSH/oh-my-zsh.sh
 #  [ -r "$file"  ] && [ -f "$file"  ] && source "$file";
 
 # nvm config according to brew install nvm
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+#export NVM_DIR="$HOME/.nvm"
+#. "/usr/local/opt/nvm/nvm.sh"
 
 PATH=$PATH:~/bin
 
@@ -120,3 +118,5 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
