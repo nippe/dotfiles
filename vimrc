@@ -29,6 +29,10 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-syntastic/syntastic'
+" Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'maksimr/vim-jsbeautify'
 
 call vundle#end()            " required
 
