@@ -13,3 +13,6 @@ cp gitconfig ~/.gitconfig
 
 echo "sourceing zshrc"
 source ~/.zshrc
+
+echo "zprofile"
+cp zprofile ~/.zprofile
