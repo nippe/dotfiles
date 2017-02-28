@@ -90,6 +90,10 @@ let g:syntastic_javascript_checkers = ['eslint']
 au BufReadPost *.hbs set syntax=mustache
 autocmd BufNewFile,BufRead *.styl set filetype=stylus
 
+" Enable mouse
+set mouse=a
+
+
 " Curser formatting
 " highlight Cursor guifg=grey guibg=black
 " highlight iCursor guifg=white guibg=steelblue
