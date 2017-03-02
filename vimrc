@@ -29,8 +29,8 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-syntastic/syntastic'
-" Plugin 'jelera/vim-javascript-syntax'
-Plugin 'pangloss/vim-javascript'
+Plugin 'jelera/vim-javascript-syntax'
+" Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'maksimr/vim-jsbeautify'
 " Plugin 'wincent/command-t'
@@ -72,6 +72,8 @@ set expandtab
 set smarttab
 set nowrap
 
+" Colorscheme
+colorscheme onedark
 
 " Syntastic settings
 set statusline+=%#warningmsg#
@@ -89,10 +91,6 @@ let g:syntastic_javascript_checkers = ['eslint']
 " Syntax highlighting for handlebars
 au BufReadPost *.hbs set syntax=mustache
 autocmd BufNewFile,BufRead *.styl set filetype=stylus
-
-" Enable mouse
-set mouse=a
-
 
 " Curser formatting
 " highlight Cursor guifg=grey guibg=black
