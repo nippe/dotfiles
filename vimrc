@@ -42,6 +42,8 @@ filetype plugin indent on    " required
 filetype plugin on
 filetype indent on
 
+set mouse=a
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -54,7 +56,11 @@ filetype indent on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" Ignoreing directories for CtrlP and command-t
+set wildignore+=*.o,*.obj,node_modules/*
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
+" Airline config
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='luna'
 set laststatus=2
