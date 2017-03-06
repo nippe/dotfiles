@@ -8,6 +8,7 @@ set ruler
 set cursorline
 set nocompatible              " be iMproved, required
 
+let mapleader = "\<Space>"
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -35,6 +36,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'maksimr/vim-jsbeautify'
 " Plugin 'wincent/command-t'
 Plugin 'wavded/vim-stylus'
+
+Plugin 'wakatime/vim-wakatime'
 
 call vundle#end()            " required
 
