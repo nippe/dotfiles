@@ -10,6 +10,18 @@ set nocompatible              " be iMproved, required
 
 let mapleader = "\<Space>"
 
+
+" Copy & paste to system clipboard with <Space>p and <Space>y:
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
+" Enter visual line mode with <Space><Space>:
+nmap <Leader><Leader> V
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -36,6 +48,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'maksimr/vim-jsbeautify'
 " Plugin 'wincent/command-t'
 Plugin 'wavded/vim-stylus'
+Plugin 'tpope/vim-surround'
 
 Plugin 'wakatime/vim-wakatime'
 
