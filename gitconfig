@@ -9,9 +9,13 @@
 [merge]
   keepBackup = false
 	tool = Kaleidoscope
+  conflictStyle = diff3
 
 [diff]
 	tool = Kaleidoscope
+
+[push]
+  follwoTags = true
 
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
@@ -26,11 +30,15 @@
 [mergetool]
 	prompt = false
 
+[status]
+  showUntrackedFiles = all
 
 [help]
 	autocorrect = 1
+
 [color]
 	ui = auto
+
 [alias]
   st = status -sb
   co = checkout
@@ -55,3 +63,4 @@
   rcdiff = !git diff --name-status master rc 
   grep-all = !"git rev-list --all | xargs git grep '$1'"
   ppm = !git pull --rebase && git push origin master
+  stash-all = stash save --include-untracked
