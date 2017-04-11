@@ -7,6 +7,7 @@ set number
 set ruler
 set cursorline
 set nocompatible              " be iMproved, required
+set hlsearch
 
 let mapleader = "\<Space>"
 
@@ -113,6 +114,10 @@ let g:syntastic_javascript_checkers = ['eslint']
 " Syntax highlighting for handlebars
 au BufReadPost *.hbs set syntax=mustache
 autocmd BufNewFile,BufRead *.styl set filetype=stylus
+
+" Show invisible characters
+set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
+set list
 
 " Curser formatting
 " highlight Cursor guifg=grey guibg=black
