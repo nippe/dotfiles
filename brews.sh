@@ -25,6 +25,7 @@ brews=(
   ag
   node
   nvm
+  dfu-util
 )
 
 casks=(
@@ -47,7 +48,7 @@ casks=(
   caffeine
   evernote
   kaleidoscope
-  soulver
+  #soulver
   sonos
   calibre
   #omnifocus
