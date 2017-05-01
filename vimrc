@@ -7,7 +7,6 @@ set number
 set ruler
 set cursorline
 set nocompatible              " be iMproved, required
-set hlsearch
 
 let mapleader = "\<Space>"
 
@@ -73,6 +72,9 @@ set mouse=a
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" fixing so that å works again
+let g:AutoPairsShortcutFastWrap=''
+
 " Ignoreing directories for CtrlP and command-t
 set wildignore+=*.o,*.obj,node_modules/*
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
@@ -114,10 +116,6 @@ let g:syntastic_javascript_checkers = ['eslint']
 " Syntax highlighting for handlebars
 au BufReadPost *.hbs set syntax=mustache
 autocmd BufNewFile,BufRead *.styl set filetype=stylus
-
-" Show invisible characters
-set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
-set list
 
 " Curser formatting
 " highlight Cursor guifg=grey guibg=black
