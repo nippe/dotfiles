@@ -4,19 +4,19 @@ if test ! $(which brew); then
 fi
 
 brews=(
-	git
-	jq
-	httpie
-	lastpass-cli
-	icdiff
-	wget
-	tree
-	macvim
-	fish
-	jq
-	direnv
-	awscli
-	openssl
+  git
+  jq
+  httpie
+  lastpass-cli
+  icdiff
+  wget
+  tree
+  macvim
+  fish
+  jq
+  direnv
+  awscli
+  openssl
   yarn
   fasd
   icdiff
@@ -26,20 +26,21 @@ brews=(
   node
   nvm
   dfu-util
+  fzf
 )
 
 casks=(
-	alfred
-	atom
-	firefox
-	google-chrome
-	iterm2
-	slack
-	witch
-	dropbox
-	spotify
-	ngrok
-	hazel
+  alfred
+  atom
+  firefox
+  google-chrome
+  iterm2
+  slack
+  witch
+  dropbox
+  spotify
+  ngrok
+  hazel
   dropbox
   slack
   firefox
