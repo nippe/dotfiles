@@ -57,3 +57,5 @@ saveItToReadLater() {
   echo $1 >> ~/Desktop/to_checkout.txt
 }
 
+# client specific
+alias es24="/usr/local/opt/elasticsearch@2.4/bin/elasticsearch"
