@@ -19,6 +19,12 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
+" Pane navigation 
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Enter visual line mode with <Space><Space>:
 nmap <Leader><Leader> V
 
@@ -116,6 +122,10 @@ let g:syntastic_javascript_checkers = ['eslint']
 " Syntax highlighting for handlebars
 au BufReadPost *.hbs set syntax=mustache
 autocmd BufNewFile,BufRead *.styl set filetype=stylus
+
+" Highlight trailing whitespaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
 
 " Curser formatting
 " highlight Cursor guifg=grey guibg=black
