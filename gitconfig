@@ -64,7 +64,7 @@
   grep-all = !"git rev-list --all | xargs git grep '$1'"
   ppm = !git pull --rebase && git push origin master
   stash-all = stash save --include-untracked
-  praise blame
-  toplist shortlog -sn
-  my-recent-branches git for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
-  lolan log --graph --all --decorate --stat --date=iso
+  praise = blame
+  toplist = shortlog -sn
+  my-recent-branches = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
+  lolan = log --graph --all --decorate --stat --date=iso
