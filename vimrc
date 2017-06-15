@@ -104,7 +104,8 @@ set smarttab
 set nowrap
 
 " Colorscheme
-colorscheme onedark
+"colorscheme onedark
+colorscheme lucid
 
 " Syntastic settings
 set statusline+=%#warningmsg#
