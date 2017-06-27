@@ -16,3 +16,6 @@ source ~/.zshrc
 
 echo "zprofile"
 cp zprofile ~/.zprofile
+
+echo "vs code plugins"
+./vscode/install-vscode-extensions.sh
