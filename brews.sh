@@ -19,7 +19,6 @@ brews=(
   openssl
   yarn
   fasd
-  icdiff
   nmap
   hub
   ag
@@ -27,6 +26,7 @@ brews=(
   nvm
   dfu-util
   fzf
+  diff-so-fancy
 )
 
 casks=(
