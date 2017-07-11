@@ -11,6 +11,7 @@ export ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="honukai"
 ZSH_THEME="spaceship"
+source $HOME/.spaceship_config
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -54,7 +55,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm fasd)
+plugins=(git nvm fasd docker)
 
 #source $ZSH/oh-my-zsh.sh
 
