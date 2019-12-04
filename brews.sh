@@ -4,15 +4,17 @@ if test ! $(which brew); then
 fi
 
 brews=(
+  aws-sam-cli
+  awscli
   git
   jq
+  fsad
   httpie
+  go
   lastpass-cli
   icdiff
   wget
   tree
-  macvim
-  fish
   jq
   direnv
   awscli
@@ -22,37 +24,31 @@ brews=(
   nmap
   hub
   ag
-  node
   nvm
-  dfu-util
   fzf
   diff-so-fancy
+  terraform
+  watchman
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 casks=(
   alfred
-  atom
+  caffeine
+  dropbox
   firefox
+  graphql-playground
   google-chrome
   iterm2
   slack
   witch
-  dropbox
   spotify
   ngrok
   hazel
   dropbox
-  slack
-  firefox
-  vlc
-  flux
-  caffeine
-  evernote
   kaleidoscope
-  #soulver
-  sonos
-  calibre
-  #omnifocus
+  slack
 )
 
 echo "installing brews..."
