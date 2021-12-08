@@ -19,8 +19,6 @@ alias mcd=makedirAndCdIntoIt
 cleanAndReinstallNpmPackages(){
 	echo "Removing node_modules..."
 	rm -rf node_modules
-	echo "Cleaning npm cache..."
-	npm cache clean
 	echo "Reinstalling node_modules..."
 	npm install
 }
@@ -29,9 +27,6 @@ alias npmcr=cleanAndReinstallNpmPackages
 
 cleanAndReinstallNpmPackagesDevDep(){
 	echo "Removing node_modules..."
-	rm -rf node_modules
-	echo "Cleaning npm cache..."
-	npm cache clean
 	echo "Reinstalling node_modules..."
 	npm install
 }
@@ -51,11 +46,18 @@ alias t2="tree -L 2 -I node_modules"
 alias t3="tree -L 3 -I node_modules"
 alias t4="tree -L 4 -I node_modules"
 
+alias catpack="cat package.json | jq"
+
 alias later=saveItToReadLater
 
 saveItToReadLater() {
   echo $1 >> ~/Desktop/to_checkout.txt
 }
 
-# client specific
-alias es24="/usr/local/opt/elasticsearch@2.4/bin/elasticsearch"
+# AWS Stuff
+alias awsp="source _awsp"
+
+alias aws2=" docker run --rm -it -v ~/.aws:/root/.aws amazon/aws-cli"
+
+alias gclonecd='git clone "$1" && cd "$(basename "$1" .git)"'
+
