@@ -4,11 +4,11 @@ if test ! $(which brew); then
 fi
 
 brews=(
-  aws-sam-cli
+  # aws-sam-cli
   awscli
   git
   jq
-  fsad
+  fasd
   httpie
   go
   lastpass-cli
@@ -37,9 +37,7 @@ casks=(
   alfred
   caffeine
   dropbox
-  firefox
   graphql-playground
-  google-chrome
   iterm2
   slack
   witch
@@ -55,4 +53,4 @@ echo "installing brews..."
 brew install ${brews[@]}
 
 echo "installing casks..."
-brew cask install ${casks[@]}
+# brew cask install ${casks[@]}
